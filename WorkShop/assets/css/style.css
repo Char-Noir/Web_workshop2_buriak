@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+body {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.header_div {
+  background: #221F1F;
+  width: 100vw;
+  height: 6vmin;
+}
+
+.header {
+  vertical-align: bottom;
+}
+
+.header_logo {
+  display: inline-block;
+  font-family: Comfortaa;
+  text-decoration: underline;
+  font-size: 2.8047vmin;
+  color: #E7F6F9;
+  /*padding-left: 3.3929*2vmin;*/
+  vertical-align: 15%;
+  width: auto;
+}
+
+.button_left {
+  width: 3.0796vmin;
+  height: 3.0796vmin;
+  display: inline-block;
+  background-color: #C01F14;
+  margin-top: 1.3vmin;
+  margin-left: 1vmin;
+  border-radius: 0.7vmin;
+}
+
+table {
+  padding-top: 0.5vmin;
+}
+
+.button_left td {
+  background-color: #E7F6F9;
+  width: 1.3vmin;
+  border-radius: 0.7vmin;
+  height: 0.3vmin;
+}
