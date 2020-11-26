@@ -34,9 +34,9 @@ height: 6vmin;
   height: 3.0796vmin;
   display: inline-block;
   background-color: #C01F14;
-  margin-top: 1.3vmin;
-  margin-left: 1vmin;
+
   border-radius: 0.7vmin;
+  cursor: pointer;
 }
 table{
   padding-top: 0.5vmin;
@@ -48,6 +48,74 @@ table{
   border-radius: 0.7vmin;
   height: 0.3vmin;
 
+}
 
 
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+.column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+.column2 {
+    float: right;
+
+    padding: 10px;
+    font-family: Okta Neue;
+
+    color: $color-logo;
+
+}
+.row2{
+  margin-right: 20px;
+}
+
+.column2 a{
+  color:$color-logo;
+  background-color: $color-addition;
+  padding: 0px 15px;
+  border-radius: 5px;
+}
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container {
+    position: relative;
+    display: block;
+}
+
+
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.contant{
+  -webkit-filter: blur(5px);
+       -moz-filter: blur(5px);
+         -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+            filter: blur(5px);
 }

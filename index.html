@@ -3,33 +3,81 @@
   <head>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="assets/js/code.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>WorkShop2</title>
   </head>
   <body>
-
+<div id="contant_1">
+<!-- Header -->
 <div class="header_div">
   <header class="header">
-    <div class="button_left">
-    <a href="#">  <table align="center"class="">
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-      </table></a>
-    </div>
-    <div class="header_logo">
-      Кинотеатр
-    </div>
+
+
+    <div class="row1">
+
+      <div class="column1">
+        <div class="button_left">
+         <table align="center"class=""onclick="blur(this);">
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+        </div>
+        <div class="header_logo">
+          Кинотеатр
+        </div>
+      </div></div>
+        <div class="row2">
+      <div class="column2">
+<a href="#galery">Галерея</a>
+      </div>
+      <div class="column2">
+<a href="#aboutus">Про нас</a>
+      </div>
+      <div class="column2">
+<a href="#whywe">Технологии</a>
+      </div>
+
+      </div>
+
   </header>
 </div>
 
+<!-- The expanding image container -->
+<div class="container">
 
+  <!-- Expanded image -->
+  <img src ="assets/images/Stone_full.jpg" id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+<!-- cinema galery: four columns -->
+<div class="row" id="galery">
+  <div class="column">
+    <img src="assets/images/Stone_small.jpg" alt="Harry Potter and Stone" onclick="openImg('assets/images/Stone_full.jpg');" height="200px" width="130px">
+  </div>
+  <div class="column">
+    <img src="assets/images/room_small.jpg" alt="Harry Potter and room" onclick="openImg('assets/images/room_full.jpg');"height="200px" width="130px">
+  </div>
+  <div class="column">
+    <img src="assets/images/Fire_small.jpg" alt="Harry Potter and Askaban" onclick="openImg('assets/images/fire_full.jpg');"height="200px" width="130px">
+  </div>
+  <div class="column">
+    <img src="assets/images/dead_small.jpg" alt="Harry Potter and FireCup" onclick="openImg('assets/images/dead_full.jpg');"height="200px" width="130px">
+  </div>
+</div>
+
+
+</div>
   </body>
 </html>

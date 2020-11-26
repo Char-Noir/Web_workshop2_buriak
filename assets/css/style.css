@@ -30,9 +30,8 @@ body {
   height: 3.0796vmin;
   display: inline-block;
   background-color: #C01F14;
-  margin-top: 1.3vmin;
-  margin-left: 1vmin;
   border-radius: 0.7vmin;
+  cursor: pointer;
 }
 
 table {
@@ -44,4 +43,69 @@ table {
   width: 1.3vmin;
   border-radius: 0.7vmin;
   height: 0.3vmin;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+.column2 {
+  float: right;
+  padding: 10px;
+  font-family: Okta Neue;
+  color: #E7F6F9;
+}
+
+.row2 {
+  margin-right: 20px;
+}
+
+.column2 a {
+  color: #E7F6F9;
+  background-color: #C01F14;
+  padding: 0px 15px;
+  border-radius: 5px;
+}
+
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: block;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.contant {
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
