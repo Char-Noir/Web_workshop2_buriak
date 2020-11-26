@@ -7,7 +7,55 @@ body{
   margin-left: 0;
   margin-top: 0;
 }
+/* Боковое навигационное меню */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 ширина - изменить это с помощью JavaScript */
+  position: fixed; /* Оставайтесь на месте */
+  z-index: 1; /* Оставайтесь сверху */
+  top: 0; /* Оставайтесь наверху */
+  left: 0;
+  background-color: #111; /* Фон черный*/
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  padding-top: 60px; /* Поместите контент в 60px сверху */
+  transition: 0.5s; /* 0.5 второй эффект перехода слайда в боковой навигации */
+}
 
+/* Ссылки меню навигации */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Когда вы наводите курсор мыши на навигационные ссылки, изменяется их цвет */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Стиль содержимого страницы - используйте это, если вы хотите сдвинуть содержимое страницы вправо при открытии боковой навигации */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* На экранах меньшего размера, где высота меньше 450px, измените стиль sidenav (меньше отступов и меньший размер шрифта) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 .header_div{
   background: $color-header;
@@ -18,6 +66,7 @@ height: 6vmin;
 }
 .header{
   vertical-align: bottom;
+
 }
 .header_logo{
   display: inline-block;
@@ -118,4 +167,43 @@ table{
          -o-filter: blur(5px);
         -ms-filter: blur(5px);
             filter: blur(5px);
+}
+
+form {
+  border: 4px solid #f1f1f1;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add some padding and a grey background color to containers */
+.container1 {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: $color-addition;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
 }

@@ -19,7 +19,7 @@
 
       <div class="column1">
         <div class="button_left">
-         <table align="center"class=""onclick="blur(this);">
+         <table align="center"class=""onclick="openNav()">
           <tr>
             <td></td>
           </tr>
@@ -52,7 +52,7 @@
 </div>
 
 <!-- The expanding image container -->
-<div class="container">
+<div class="container1" id="galery">
 
   <!-- Expanded image -->
   <img src ="assets/images/Stone_full.jpg" id="expandedImg" style="width:100%">
@@ -62,7 +62,7 @@
 </div>
 
 <!-- cinema galery: four columns -->
-<div class="row" id="galery">
+<div class="row" >
   <div class="column">
     <img src="assets/images/Stone_small.jpg" alt="Harry Potter and Stone" onclick="openImg('assets/images/Stone_full.jpg');" height="200px" width="130px">
   </div>
@@ -76,8 +76,77 @@
     <img src="assets/images/dead_small.jpg" alt="Harry Potter and FireCup" onclick="openImg('assets/images/dead_full.jpg');"height="200px" width="130px">
   </div>
 </div>
+</div>
+<div id="aboutus">
 
 
 </div>
+
+<!--<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+
+</div>-->
+
+<div id="aboutus">
+<h2>Про нас</h2>
+<p><ul>
+<li>  В кинотеатре идут как мировые блокбастеры, так и альтернативные фильмы, не идущие ни в одном из кинотеатров города, проводятся фестивали зарубежного кино и мульт – парады для маленьких посетителей.</li>
+
+<li>  В «Палац кино» есть все! И уютное кафе, которое занимает большую часть площади кинотеатра, и игровые автоматы, и кассы, и гардероб. И что еще главное, большое просторное фойе</li>
+
+<li>  Кинотеатр может принять у себя одновременно до 500 человек.</li>
+
+<li>  «Палац кино им. О. Кобылянской» – это один из самых красивых кинотеатров, где Вас всегда ждет приветливый персонал, чистота и уют!</li></ul></p>
+</div>
+<div id="whywe">
+  <h2>Технологии</h2>
+<ol>
+
+<li> Время работы:</li>
+  <ul>
+    <li>Кинотеатры работают 7 дней в неделю с 9-30 до окончания последнего сеанса в кинотеатре.</li>
+</ul>
+
+<li> На территории кинотеатра запрещается:</li>
+  <ul>
+   <li>курить, употреблять крепкие алкогольные напитки и наркотические вещества;</li>
+
+   <li>фотографировать и снимать без предварительного согласования с руководством кинотеатра;</li>
+
+   <li>кататься на скейтборде, роликах или велосипедах;</li>
+
+   <li>посещать кинотеатр с животными.</li>
+  </ul>
+
+</ol>
+</div>
+
+<form>
+  <fieldset class="container1">
+    <legend><h2><i>Подпишитесь?)</i></h2></legend>
+  </div>
+
+  <div class="container1" style="background-color:white">
+    <input type="text" placeholder="Ваше имя, сэр" name="name" required>
+    <input type="text" placeholder="И адрес куда прислать" name="email" required>
+    Выберите категорию:
+    <div>
+    <input type="radio" name="theme" value="1">
+    <label for="theme">Фильмы</label>
+    <input type="radio" name="theme" value="1">
+    <label for="theme">Сериалы</label>
+    <input type="radio" name="theme" value="1">
+    <label for="theme">Попкорн</label>
+  </div>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe" required> <b>Не против</b>
+    </label>
+  </div>
+
+  <div class="container1">
+    <input type="submit" value="Подписочка">
+  </fieldset>
+</form>
   </body>
 </html>
