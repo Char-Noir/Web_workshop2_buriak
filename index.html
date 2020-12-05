@@ -6,12 +6,21 @@
     <script src="assets/js/code.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
+  
+
     <title>WorkShop2</title>
   </head>
   <body>
+    <!--Пока не отлажено-->
+  <!-- <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+
+  </div>-->
+
 <div id="contant_1">
 <!-- Header -->
-<div class="header_div">
+<div class="header_div" id="start">
   <header class="header">
 
 
@@ -37,123 +46,200 @@
       </div></div>
         <div class="row2">
       <div class="column2">
-<a href="#galery">Галерея</a>
+          <a name = "Head_link_gal" href="#galery" ondragstart="return false">Галерея</a>
       </div>
       <div class="column2">
-<a href="#aboutus">Про нас</a>
+          <a name = "Head_link_ab" href="#aboutus" ondragstart="return false">Про нас</a>
       </div>
       <div class="column2">
-<a href="#whywe">Технологии</a>
+          <a name = "Head_link_ww" href="#whywe" ondragstart="return false">Технологии</a>
       </div>
 
       </div>
 
   </header>
 </div>
+<div class="main_cont">
 
-<!-- The expanding image container -->
-<div class="container1" id="galery">
 
-  <!-- Expanded image -->
-  <img src ="assets/images/Stone_full.jpg" id="expandedImg" style="width:100%">
+    <!-- The expanding image container -->
+    <div class="container1" id="galery">
 
-  <!-- Image text -->
-  <div id="imgtext"></div>
+        <!-- Expanded image -->
+        <img src ="assets/images/Stone_full.jpg" id="expandedImg" style="width:100%">
+
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+
+    <!-- cinema galery: four columns -->
+    <div class="row" >
+
+        <img src="assets/images/Stone_small.jpg" ondrag="return false" ondragdrop="return false" ondragstart="return false" alt="Harry Potter and Stone" onclick="openImg('assets/images/Stone_full.jpg');" height="200px" width="130px">
+
+
+        <img src="assets/images/room_small.jpg" ondrag="return false" ondragdrop="return false" ondragstart="return false" alt="Harry Potter and room" onclick="openImg('assets/images/room_full.jpg');"height="200px" width="130px">
+
+
+        <img src="assets/images/Fire_small.jpg" ondrag="return false" ondragdrop="return false" ondragstart="return false" alt="Harry Potter and Askaban" onclick="openImg('assets/images/fire_full.jpg');"height="200px" width="130px">
+
+
+        <img src="assets/images/dead_small.jpg" ondrag="return false" ondragdrop="return false" ondragstart="return false" alt="Harry Potter and FireCup" onclick="openImg('assets/images/dead_full.jpg');"height="200px" width="130px">
+
+    </div>
+
+    <div id="aboutus">
+
+
+    </div>
+
+
+
+    <div id="aboutus">
+      <h2>Про нас</h2>
+      <p><ul>
+            <li>  В кинотеатре идут как мировые блокбастеры, так и альтернативные фильмы, не идущие ни в одном из кинотеатров города, проводятся фестивали зарубежного кино и мульт – парады для маленьких посетителей.</li>
+
+            <li>  В «Палац кино» есть все! И уютное кафе, которое занимает большую часть площади кинотеатра, и игровые автоматы, и кассы, и гардероб. И что еще главное, большое просторное фойе</li>
+
+            <li>  Кинотеатр может принять у себя одновременно до 500 человек.</li>
+
+            <li>  «Палац кино им. О. Кобылянской» – это один из самых красивых кинотеатров, где Вас всегда ждет приветливый персонал, чистота и уют!</li></ul></p>
+    </div>
+    <div id="whywe">
+      <h2>Технологии</h2>
+      <ol>
+
+        <li> <h4>Время работы:</h4></li>
+          <ul>
+            <li>Кинотеатры работают 7 дней в неделю с 9-30 до окончания последнего сеанса в кинотеатре.</li>
+          </ul>
+
+        <li> <h4>На территории кинотеатра запрещается:</h4></li>
+          <ul>
+            <li>курить, употреблять крепкие алкогольные напитки и наркотические вещества;</li>
+
+            <li>фотографировать и снимать без предварительного согласования с руководством кинотеатра;</li>
+
+            <li>кататься на скейтборде, роликах или велосипедах;</li>
+
+            <li>посещать кинотеатр с животными.</li>
+          </ul>
+
+      </ol>
+      </div>
+      <div class="form_and_text">
+
+
+        <form>
+          <fieldset class="container1">
+            <legend><h2><i>Подпишитесь?)</i></h2></legend>
+
+
+            <div class="container1" style="background-color:white">
+              <input type="text" placeholder="Ваше имя, сэр" name="name" required>
+              <input type="text" placeholder="И адрес куда прислать" name="email" required>
+              Выберите категорию:
+              <div>
+                <input type="radio" name="theme" value="1">
+                <label for="theme">Фильмы</label>
+                <input type="radio" name="theme" value="1">
+                <label for="theme">Сериалы</label>
+                <input type="radio" name="theme" value="1">
+                <label for="theme">Попкорн</label>
+              </div>
+              <div>
+                Как часто присылать письма?<br>
+                <select>
+                  <option>Раз в день</option>
+                  <option>Когда есть хороший повод</option>
+                </select>
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="subscribe" required> <b>Не против</b>
+              </label>
+            </div>
+
+            <div class="container1">
+              <input type="submit" value="Подписочка">
+            </fieldset>
+          </form>
+
+        <div class="text_cont">
+          I may not be that great, <br>
+          but my need for CGmatter is inate,<br>
+          When I'm watching youtube vieos on my ass, <br>
+          I see cgmatter and I click fast.<br>
+          although the aspect ratio sometimes… I must confess,<br>
+          it makes my brain become a soupy mess.<br>
+          But now I realize that weekly tutorials aren't the key,<br>
+          to epic blendering by me.<br>
+          I think I maybe need to go try,<br>
+          blender a few more times before i die.<br>
+          So in conclusion cgmater is awesome and amusing,<br>
+          blender is quite confusing.<br>
+          Especially at such a warp speed rate,<br>
+          fast talking may be his untimely fate.<br>
+          <br>
+          -The epic saga of CGMatter.<br><br><br>
+          I may not be that great, <br>
+          but my need for CGmatter is inate,<br>
+          When I'm watching youtube vieos on my ass, <br>
+          I see cgmatter and I click fast.<br>
+          although the aspect ratio sometimes… I must confess,<br>
+          it makes my brain become a soupy mess.<br>
+          But now I realize that weekly tutorials aren't the key,<br>
+          to epic blendering by me.<br>
+          I think I maybe need to go try,<br>
+          blender a few more times before i die.<br>
+          So in conclusion cgmater is awesome and amusing,<br>
+          blender is quite confusing.<br>
+          Especially at such a warp speed rate,<br>
+          fast talking may be his untimely fate.<br>
+          <br>
+          -The epic saga of CGMatter.<br><br><br>
+          I may not be that great, <br>
+          but my need for CGmatter is inate,<br>
+          When I'm watching youtube vieos on my ass, <br>
+          I see cgmatter and I click fast.<br>
+          although the aspect ratio sometimes… I must confess,<br>
+          it makes my brain become a soupy mess.<br>
+          But now I realize that weekly tutorials aren't the key,<br>
+          to epic blendering by me.<br>
+          I think I maybe need to go try,<br>
+          blender a few more times before i die.<br>
+          So in conclusion cgmater is awesome and amusing,<br>
+          blender is quite confusing.<br>
+          Especially at such a warp speed rate,<br>
+          fast talking may be his untimely fate.<br>
+          <br>
+          -The epic saga of CGMatter.<br>
+
 </div>
+      </div>
+      </div>
+    </div>
+    <footer>
+<div class="footer">
 
-<!-- cinema galery: four columns -->
-<div class="row" >
-  <div class="column">
-    <img src="assets/images/Stone_small.jpg" alt="Harry Potter and Stone" onclick="openImg('assets/images/Stone_full.jpg');" height="200px" width="130px">
-  </div>
-  <div class="column">
-    <img src="assets/images/room_small.jpg" alt="Harry Potter and room" onclick="openImg('assets/images/room_full.jpg');"height="200px" width="130px">
-  </div>
-  <div class="column">
-    <img src="assets/images/Fire_small.jpg" alt="Harry Potter and Askaban" onclick="openImg('assets/images/fire_full.jpg');"height="200px" width="130px">
-  </div>
-  <div class="column">
-    <img src="assets/images/dead_small.jpg" alt="Harry Potter and FireCup" onclick="openImg('assets/images/dead_full.jpg');"height="200px" width="130px">
-  </div>
+
+      <div class="row3">
+        <div class="column3">
+            <a name = "foot_link_up" href="#start" ondragstart="return false">Наверх</a>
+        </div>
+    <div class="column3">
+        <a name = "foot_link_gal" href="#galery" ondragstart="return false">Галерея</a>
+    </div>
+    <div class="column3">
+        <a name = "foot_link_ab" href="#aboutus" ondragstart="return false">Про нас</a>
+    </div>
+    <div class="column3">
+        <a name = "foot_link_ww" href="#whywe" ondragstart="return false">Технологии</a>
+    </div>
 </div>
-</div>
-<div id="aboutus">
+    </div>
+    </footer>
 
-
-</div>
-
-<!--<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-
-</div>-->
-
-<div id="aboutus">
-<h2>Про нас</h2>
-<p><ul>
-<li>  В кинотеатре идут как мировые блокбастеры, так и альтернативные фильмы, не идущие ни в одном из кинотеатров города, проводятся фестивали зарубежного кино и мульт – парады для маленьких посетителей.</li>
-
-<li>  В «Палац кино» есть все! И уютное кафе, которое занимает большую часть площади кинотеатра, и игровые автоматы, и кассы, и гардероб. И что еще главное, большое просторное фойе</li>
-
-<li>  Кинотеатр может принять у себя одновременно до 500 человек.</li>
-
-<li>  «Палац кино им. О. Кобылянской» – это один из самых красивых кинотеатров, где Вас всегда ждет приветливый персонал, чистота и уют!</li></ul></p>
-</div>
-<div id="whywe">
-  <h2>Технологии</h2>
-<ol>
-
-<li> Время работы:</li>
-  <ul>
-    <li>Кинотеатры работают 7 дней в неделю с 9-30 до окончания последнего сеанса в кинотеатре.</li>
-</ul>
-
-<li> На территории кинотеатра запрещается:</li>
-  <ul>
-   <li>курить, употреблять крепкие алкогольные напитки и наркотические вещества;</li>
-
-   <li>фотографировать и снимать без предварительного согласования с руководством кинотеатра;</li>
-
-   <li>кататься на скейтборде, роликах или велосипедах;</li>
-
-   <li>посещать кинотеатр с животными.</li>
-  </ul>
-
-</ol>
-</div>
-
-<form>
-  <fieldset class="container1">
-    <legend><h2><i>Подпишитесь?)</i></h2></legend>
   </div>
-
-  <div class="container1" style="background-color:white">
-    <input type="text" placeholder="Ваше имя, сэр" name="name" required>
-    <input type="text" placeholder="И адрес куда прислать" name="email" required>
-    Выберите категорию:
-    <div>
-    <input type="radio" name="theme" value="1">
-    <label for="theme">Фильмы</label>
-    <input type="radio" name="theme" value="1">
-    <label for="theme">Сериалы</label>
-    <input type="radio" name="theme" value="1">
-    <label for="theme">Попкорн</label>
-  </div>
-  <div>
-    Как часто присылать письма?<br>
-  <select>
-  <option>Раз в день</option>
-  <option>Когда есть хороший повод</option>
-</select>
-</div>
-    <label>
-      <input type="checkbox" checked="checked" name="subscribe" required> <b>Не против</b>
-    </label>
-  </div>
-
-  <div class="container1">
-    <input type="submit" value="Подписочка">
-  </fieldset>
-</form>
-  </body>
+</body>
 </html>
