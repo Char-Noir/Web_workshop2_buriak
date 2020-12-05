@@ -15,6 +15,12 @@ body{
   margin: 0px;
 }
 
+
+
+svg{
+  fill:$color-logo;
+}
+
 body:hover{
   cursor: progress;
 }
@@ -41,7 +47,7 @@ body:hover{
 
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 4px 8px 4px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -322,3 +328,9 @@ text-decoration-color: $color-logo;
   display: inline-flex;
   width: 100%;
   border-width: 2px;}
+
+  .socials{
+    margin:0px;
+    height: 26px;
+  
+  }
